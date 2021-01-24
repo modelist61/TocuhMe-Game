@@ -7,19 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F39AB1A25B715B400C3EC5F /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39AB1925B715B400C3EC5F /* GameScreen.swift */; };
+		7F39AB1E25B716AB00C3EC5F /* CenterPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39AB1D25B716AB00C3EC5F /* CenterPic.swift */; };
+		7F465B7025B746F800197CD4 /* TimeLineProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F465B6F25B746F800197CD4 /* TimeLineProgressViewStyle.swift */; };
+		7F7505E025AC5B0B002F5E61 /* TestScreenCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7505DF25AC5B0B002F5E61 /* TestScreenCircle.swift */; };
+		7F7C396425B6B170009E3D60 /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C396325B6B170009E3D60 /* SimpleTimer.swift */; };
+		7F7C396B25B6C29E009E3D60 /* TouchMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C396A25B6C29E009E3D60 /* TouchMe.swift */; };
+		7F7C396F25B6C413009E3D60 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C396E25B6C413009E3D60 /* Background.swift */; };
+		7F7C397225B6C492009E3D60 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C397125B6C492009E3D60 /* Header.swift */; };
+		7F7C397525B6C505009E3D60 /* LevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C397425B6C505009E3D60 /* LevelButton.swift */; };
+		7F8539A725B9CD660001312E /* CountdownCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539A625B9CD660001312E /* CountdownCircle.swift */; };
+		7F8539AA25BAEC8E0001312E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539A925BAEC8E0001312E /* Extension.swift */; };
+		7FA7026025B03E64002636C3 /* TestScreenBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7025F25B03E64002636C3 /* TestScreenBackground.swift */; };
+		7FA7026325B03F16002636C3 /* TestScreenHeaderLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7026225B03F16002636C3 /* TestScreenHeaderLogo.swift */; };
+		7FA7026625B04299002636C3 /* TestScreenTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7026525B04299002636C3 /* TestScreenTapCount.swift */; };
+		7FA7026925B05370002636C3 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7026825B05370002636C3 /* Timer.swift */; };
 		7FCD62E425A84873000CA821 /* mEmojiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD62E325A84873000CA821 /* mEmojiApp.swift */; };
-		7FCD62E625A84873000CA821 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD62E525A84873000CA821 /* ContentView.swift */; };
 		7FCD62E825A84878000CA821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCD62E725A84878000CA821 /* Assets.xcassets */; };
 		7FCD62EB25A84878000CA821 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCD62EA25A84878000CA821 /* Preview Assets.xcassets */; };
+		7FCD62F525A8668B000CA821 /* TestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD62F425A8668B000CA821 /* TestScreen.swift */; };
+		7FF9EF2225AA0A0400A623BE /* TestScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EF2125AA0A0400A623BE /* TestScreenButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F39AB1925B715B400C3EC5F /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
+		7F39AB1D25B716AB00C3EC5F /* CenterPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterPic.swift; sourceTree = "<group>"; };
+		7F465B6F25B746F800197CD4 /* TimeLineProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineProgressViewStyle.swift; sourceTree = "<group>"; };
+		7F7505DF25AC5B0B002F5E61 /* TestScreenCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenCircle.swift; sourceTree = "<group>"; };
+		7F7C396325B6B170009E3D60 /* SimpleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimer.swift; sourceTree = "<group>"; };
+		7F7C396A25B6C29E009E3D60 /* TouchMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchMe.swift; sourceTree = "<group>"; };
+		7F7C396E25B6C413009E3D60 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		7F7C397125B6C492009E3D60 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		7F7C397425B6C505009E3D60 /* LevelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelButton.swift; sourceTree = "<group>"; };
+		7F8539A625B9CD660001312E /* CountdownCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownCircle.swift; sourceTree = "<group>"; };
+		7F8539A925BAEC8E0001312E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		7FA7025F25B03E64002636C3 /* TestScreenBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenBackground.swift; sourceTree = "<group>"; };
+		7FA7026225B03F16002636C3 /* TestScreenHeaderLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenHeaderLogo.swift; sourceTree = "<group>"; };
+		7FA7026525B04299002636C3 /* TestScreenTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenTapCount.swift; sourceTree = "<group>"; };
+		7FA7026825B05370002636C3 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		7FCD62E025A84873000CA821 /* mEmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mEmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCD62E325A84873000CA821 /* mEmojiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mEmojiApp.swift; sourceTree = "<group>"; };
-		7FCD62E525A84873000CA821 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FCD62E725A84878000CA821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FCD62EA25A84878000CA821 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7FCD62EC25A84878000CA821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FCD62F425A8668B000CA821 /* TestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreen.swift; sourceTree = "<group>"; };
+		7FF9EF2125AA0A0400A623BE /* TestScreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +65,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F7C396725B6C1A6009E3D60 /* TestScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7FCD62F425A8668B000CA821 /* TestScreen.swift */,
+				7FF9EF2125AA0A0400A623BE /* TestScreenButton.swift */,
+				7F7505DF25AC5B0B002F5E61 /* TestScreenCircle.swift */,
+				7FA7025F25B03E64002636C3 /* TestScreenBackground.swift */,
+				7FA7026225B03F16002636C3 /* TestScreenHeaderLogo.swift */,
+				7FA7026525B04299002636C3 /* TestScreenTapCount.swift */,
+			);
+			path = TestScreen;
+			sourceTree = "<group>";
+		};
+		7F7C396825B6C1B4009E3D60 /* Timers */ = {
+			isa = PBXGroup;
+			children = (
+				7FA7026825B05370002636C3 /* Timer.swift */,
+				7F7C396325B6B170009E3D60 /* SimpleTimer.swift */,
+			);
+			path = Timers;
+			sourceTree = "<group>";
+		};
 		7FCD62D725A84873000CA821 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +107,17 @@
 			isa = PBXGroup;
 			children = (
 				7FCD62E325A84873000CA821 /* mEmojiApp.swift */,
-				7FCD62E525A84873000CA821 /* ContentView.swift */,
+				7F7C396A25B6C29E009E3D60 /* TouchMe.swift */,
+				7F39AB1925B715B400C3EC5F /* GameScreen.swift */,
+				7F8539A625B9CD660001312E /* CountdownCircle.swift */,
+				7F465B6F25B746F800197CD4 /* TimeLineProgressViewStyle.swift */,
+				7F7C397425B6C505009E3D60 /* LevelButton.swift */,
+				7F7C396E25B6C413009E3D60 /* Background.swift */,
+				7F7C397125B6C492009E3D60 /* Header.swift */,
+				7F39AB1D25B716AB00C3EC5F /* CenterPic.swift */,
+				7F8539A925BAEC8E0001312E /* Extension.swift */,
+				7F7C396725B6C1A6009E3D60 /* TestScreen */,
+				7F7C396825B6C1B4009E3D60 /* Timers */,
 				7FCD62E725A84878000CA821 /* Assets.xcassets */,
 				7FCD62EC25A84878000CA821 /* Info.plist */,
 				7FCD62E925A84878000CA821 /* Preview Content */,
@@ -138,8 +202,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FCD62E625A84873000CA821 /* ContentView.swift in Sources */,
+				7FCD62F525A8668B000CA821 /* TestScreen.swift in Sources */,
+				7F7C397225B6C492009E3D60 /* Header.swift in Sources */,
+				7F465B7025B746F800197CD4 /* TimeLineProgressViewStyle.swift in Sources */,
+				7F8539A725B9CD660001312E /* CountdownCircle.swift in Sources */,
+				7FA7026625B04299002636C3 /* TestScreenTapCount.swift in Sources */,
+				7FA7026025B03E64002636C3 /* TestScreenBackground.swift in Sources */,
+				7F7505E025AC5B0B002F5E61 /* TestScreenCircle.swift in Sources */,
+				7F39AB1A25B715B400C3EC5F /* GameScreen.swift in Sources */,
+				7F39AB1E25B716AB00C3EC5F /* CenterPic.swift in Sources */,
+				7F8539AA25BAEC8E0001312E /* Extension.swift in Sources */,
+				7FF9EF2225AA0A0400A623BE /* TestScreenButton.swift in Sources */,
+				7F7C397525B6C505009E3D60 /* LevelButton.swift in Sources */,
+				7F7C396B25B6C29E009E3D60 /* TouchMe.swift in Sources */,
+				7F7C396425B6B170009E3D60 /* SimpleTimer.swift in Sources */,
+				7FA7026925B05370002636C3 /* Timer.swift in Sources */,
+				7FA7026325B03F16002636C3 /* TestScreenHeaderLogo.swift in Sources */,
 				7FCD62E425A84873000CA821 /* mEmojiApp.swift in Sources */,
+				7F7C396F25B6C413009E3D60 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.mEmoji";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.mEmoji";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

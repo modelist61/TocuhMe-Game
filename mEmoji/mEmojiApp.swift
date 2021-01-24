@@ -11,7 +11,7 @@ import SwiftUI
 struct mEmojiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TouchMe()
         }
     }
 }
