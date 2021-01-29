@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let defaultTimeRemain: CGFloat = 15
+
 struct TouchMe: View {
     
     @State private var showGameScreen = false
@@ -53,7 +55,7 @@ struct TouchMe: View {
                 
                 VStack(spacing: 15) {
                     LevelButton(myButtonAction: {
-                        levelChoosw(difficult: 0.020)
+                        levelChoosw(difficult: 0.018)
                     }, text: "Easy")
                     
                     LevelButton(myButtonAction: {
@@ -68,6 +70,7 @@ struct TouchMe: View {
             .animation(.easeInOut)
         }
     }
+    
     func levelChoosw(difficult: Double) {
         finishGame = true
         showGameScreen = true

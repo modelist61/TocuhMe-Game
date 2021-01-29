@@ -18,10 +18,14 @@
 		7F7C397525B6C505009E3D60 /* LevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C397425B6C505009E3D60 /* LevelButton.swift */; };
 		7F8539A725B9CD660001312E /* CountdownCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539A625B9CD660001312E /* CountdownCircle.swift */; };
 		7F8539AA25BAEC8E0001312E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539A925BAEC8E0001312E /* Extension.swift */; };
+		7F8539AF25BEE8840001312E /* PlayMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539AE25BEE8830001312E /* PlayMusic.swift */; };
+		7F8539B325BEEAF50001312E /* GameMusic1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F8539B225BEEAF50001312E /* GameMusic1.mp3 */; };
+		7F8539B625BEF1200001312E /* GameMusic2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F8539B525BEF1200001312E /* GameMusic2.mp3 */; };
 		7FA7026025B03E64002636C3 /* TestScreenBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7025F25B03E64002636C3 /* TestScreenBackground.swift */; };
 		7FA7026325B03F16002636C3 /* TestScreenHeaderLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7026225B03F16002636C3 /* TestScreenHeaderLogo.swift */; };
 		7FA7026625B04299002636C3 /* TestScreenTapCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7026525B04299002636C3 /* TestScreenTapCount.swift */; };
 		7FA7026925B05370002636C3 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7026825B05370002636C3 /* Timer.swift */; };
+		7FA7612425C4005000F8BA5E /* GameMusic3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7FA7612325C4005000F8BA5E /* GameMusic3.mp3 */; };
 		7FCD62E425A84873000CA821 /* mEmojiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD62E325A84873000CA821 /* mEmojiApp.swift */; };
 		7FCD62E825A84878000CA821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCD62E725A84878000CA821 /* Assets.xcassets */; };
 		7FCD62EB25A84878000CA821 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCD62EA25A84878000CA821 /* Preview Assets.xcassets */; };
@@ -41,10 +45,14 @@
 		7F7C397425B6C505009E3D60 /* LevelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelButton.swift; sourceTree = "<group>"; };
 		7F8539A625B9CD660001312E /* CountdownCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownCircle.swift; sourceTree = "<group>"; };
 		7F8539A925BAEC8E0001312E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		7F8539AE25BEE8830001312E /* PlayMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusic.swift; sourceTree = "<group>"; };
+		7F8539B225BEEAF50001312E /* GameMusic1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameMusic1.mp3; sourceTree = "<group>"; };
+		7F8539B525BEF1200001312E /* GameMusic2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameMusic2.mp3; sourceTree = "<group>"; };
 		7FA7025F25B03E64002636C3 /* TestScreenBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenBackground.swift; sourceTree = "<group>"; };
 		7FA7026225B03F16002636C3 /* TestScreenHeaderLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenHeaderLogo.swift; sourceTree = "<group>"; };
 		7FA7026525B04299002636C3 /* TestScreenTapCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenTapCount.swift; sourceTree = "<group>"; };
 		7FA7026825B05370002636C3 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		7FA7612325C4005000F8BA5E /* GameMusic3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameMusic3.mp3; sourceTree = "<group>"; };
 		7FCD62E025A84873000CA821 /* mEmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mEmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCD62E325A84873000CA821 /* mEmojiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mEmojiApp.swift; sourceTree = "<group>"; };
 		7FCD62E725A84878000CA821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +95,17 @@
 			path = Timers;
 			sourceTree = "<group>";
 		};
+		7F8539B125BEE8B30001312E /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				7F8539AE25BEE8830001312E /* PlayMusic.swift */,
+				7F8539B525BEF1200001312E /* GameMusic2.mp3 */,
+				7F8539B225BEEAF50001312E /* GameMusic1.mp3 */,
+				7FA7612325C4005000F8BA5E /* GameMusic3.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		7FCD62D725A84873000CA821 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +135,7 @@
 				7F7C397125B6C492009E3D60 /* Header.swift */,
 				7F39AB1D25B716AB00C3EC5F /* CenterPic.swift */,
 				7F8539A925BAEC8E0001312E /* Extension.swift */,
+				7F8539B125BEE8B30001312E /* Music */,
 				7F7C396725B6C1A6009E3D60 /* TestScreen */,
 				7F7C396825B6C1B4009E3D60 /* Timers */,
 				7FCD62E725A84878000CA821 /* Assets.xcassets */,
@@ -191,7 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCD62EB25A84878000CA821 /* Preview Assets.xcassets in Resources */,
+				7FA7612425C4005000F8BA5E /* GameMusic3.mp3 in Resources */,
+				7F8539B625BEF1200001312E /* GameMusic2.mp3 in Resources */,
 				7FCD62E825A84878000CA821 /* Assets.xcassets in Resources */,
+				7F8539B325BEEAF50001312E /* GameMusic1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +231,7 @@
 				7F8539A725B9CD660001312E /* CountdownCircle.swift in Sources */,
 				7FA7026625B04299002636C3 /* TestScreenTapCount.swift in Sources */,
 				7FA7026025B03E64002636C3 /* TestScreenBackground.swift in Sources */,
+				7F8539AF25BEE8840001312E /* PlayMusic.swift in Sources */,
 				7F7505E025AC5B0B002F5E61 /* TestScreenCircle.swift in Sources */,
 				7F39AB1A25B715B400C3EC5F /* GameScreen.swift in Sources */,
 				7F39AB1E25B716AB00C3EC5F /* CenterPic.swift in Sources */,
@@ -277,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -332,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -357,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.mEmoji";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.TouchMe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -379,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.mEmoji";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.TouchMe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

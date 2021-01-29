@@ -8,7 +8,8 @@
 import SwiftUI
 import AVFoundation
 
-let defaultTimeRemain: CGFloat = 10
+let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height
 
 struct GameScreen: View {
     
@@ -17,11 +18,11 @@ struct GameScreen: View {
     @Binding var goMain: Bool
     @Binding var selectLevel: Double
     @Binding var tapCount: Int
-//    @Binding var oneSecond: Double
+    //    @Binding var oneSecond: Double
     
-    @State private var offSet = (0, 0)
-
-//    @State private var tapCount = 0
+    @State private var offSet: (CGFloat, CGFloat) = (0, 0)
+    
+    //    @State private var tapCount = 0
     @State private var isActiveObject = false
     
     @State private var isActiveTimer = false
@@ -32,22 +33,41 @@ struct GameScreen: View {
     
     @State private var oneSecond = 0.0
     
+    
     var body: some View {
         
         let oneSecondFilter = oneSecond.rounded()
+        let dataPic = Array(0..<tapCount)
+//        var offSetAnim = (0, 0)
         
         ZStack {
             VStack {
-                ProgressView(value: abs(timeRemaining), total: defaultTimeRemain)
-                    .progressViewStyle(TimeLineProgressViewStyle(timeRemaining: $timeRemaining))
-                    
-//                Text("\(tapCount)")
-//                Text("\(oneSecond)")
-//                Text("\(oneSecondFilter)")
-//
-//                Button("START") {
-//                    changeOpacity()
-//                }
+                ZStack {
+                    ProgressView(value: abs(timeRemaining), total: defaultTimeRemain)
+                        .progressViewStyle(TimeLineProgressViewStyle(timeRemaining: $timeRemaining))
+
+                    HStack {
+                        Text( (tapCount % 3) == 0 ? "+2 seconds" : "")
+                            .opacity(tapCount > 0 ? 1.0 : 0.0)
+                            .animation(.easeIn(duration: tapCount == 0 ? 0.0 : 0.9))
+                    }
+                }
+               
+//                Spacer()
+                HStack {
+                    LazyHGrid(rows: [GridItem()]) {
+                        ForEach(dataPic, id: \.self) { item in
+                            HStack {
+                                Image("28-3")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .animation(.easeInOut)
+                            }
+                        }
+                    }
+                }.frame(width: screenWidth, height: 40)
+//                .padding(.bottom, 12)
+                
                 Spacer()
             }
             VStack {
@@ -55,15 +75,15 @@ struct GameScreen: View {
                 ZStack {
                     CountdownCircle(countDownTimerActive: $finishGame,
                                     isActiveTimer: $isActiveTimer)
-                        .offset(y: -44)
-//                        .hidden()
-                        
+                        .offset(y: -62)
+                    //                        .hidden()
                     
                     Image("28-3")
                         .resizable()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 100,
+                               height: 100)
                         .foregroundColor(.red)
-                        .offset(x: CGFloat(offSet.0), y: CGFloat(offSet.1))
+                        .offset(x: offSet.0, y: offSet.1)
                         .shadow(radius: 10 )
                         .opacity(isActiveObject ? 1.0 : 0.0)
                         .onTapGesture {
@@ -71,7 +91,10 @@ struct GameScreen: View {
                             isActiveObject = false
                             AudioServicesPlaySystemSound(1103) //Sound
                             AudioServicesPlaySystemSound(1351) //Vibe
-
+                            if (tapCount % 3) == 0 {
+                                timeRemaining += 2
+                            }
+                    
                         }
                         .onChange(of: oneSecondFilter) { _ in
                             changeOpacity()
@@ -79,22 +102,27 @@ struct GameScreen: View {
                 }
                 Spacer()
             }
-            
-            
+        }.onChange(of: isActiveTimer) { _ in
+            if hideOnMain {
+                playSound(sound: "GameMusic3", type: "mp3")
+            } else {
+                stopSound()
+            }
         }
+
+        .ignoresSafeArea(.all, edges: .bottom)
         .onReceive(mainTimer, perform: { _ in
             onReciveTimer()
         })
     }
     
     func changeOpacity() {
-            if isActiveTimer  {
-                isActiveObject.toggle()
-                offSet = (Int.random(in: -150...150),
-                          Int.random(in: -300...370))
-                
-            }
+        if isActiveTimer  {
+            isActiveObject.toggle()
+            offSet = (CGFloat.random(in: -150...150),
+                      CGFloat.random(in: -300...320))
         }
+    }
     
     func onReciveTimer() {
         guard isActiveTimer else { return }
@@ -102,7 +130,7 @@ struct GameScreen: View {
             timeRemaining -= 0.01
             oneSecond += selectLevel
         } else {
-//            AudioServicesPlaySystemSound(1023)
+            //            AudioServicesPlaySystemSound(1023)
             AudioServicesPlaySystemSound(1003)
             isActiveTimer = false
             timeRemaining = defaultTimeRemain
@@ -116,6 +144,6 @@ struct GameScreen: View {
 
 struct GameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        GameScreen(hideOnMain: .constant(true), finishGame: .constant(true), goMain: .constant(false), selectLevel: .constant(0.01), tapCount: .constant(0))
+        GameScreen(hideOnMain: .constant(true), finishGame: .constant(true), goMain: .constant(false), selectLevel: .constant(0.01), tapCount: .constant(3))
     }
 }
