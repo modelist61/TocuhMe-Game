@@ -54,18 +54,21 @@ struct GameScreen: View {
                 }
                
 //                Spacer()
-                HStack {
+                HStack(alignment: .firstTextBaseline) {
                     LazyHGrid(rows: [GridItem()]) {
                         ForEach(dataPic, id: \.self) { item in
                             HStack {
                                 Image("28-3")
                                     .resizable()
                                     .frame(width: 30, height: 30)
-                                    .animation(.easeInOut)
+                                    .animation(.easeOut)
                             }
                         }
                     }
-                }.frame(width: screenWidth, height: 40)
+                }
+                .frame(width: screenWidth - 32,
+                       height: 40,
+                       alignment: .trailing)
 //                .padding(.bottom, 12)
                 
                 Spacer()
@@ -93,7 +96,9 @@ struct GameScreen: View {
                             AudioServicesPlaySystemSound(1351) //Vibe
                             if (tapCount % 3) == 0 {
                                 timeRemaining += 2
+                                AudioServicesPlaySystemSound(1256)
                             }
+                       
                     
                         }
                         .onChange(of: oneSecondFilter) { _ in
@@ -144,6 +149,6 @@ struct GameScreen: View {
 
 struct GameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        GameScreen(hideOnMain: .constant(true), finishGame: .constant(true), goMain: .constant(false), selectLevel: .constant(0.01), tapCount: .constant(3))
+        GameScreen(hideOnMain: .constant(true), finishGame: .constant(true), goMain: .constant(false), selectLevel: .constant(0.01), tapCount: .constant(23))
     }
 }

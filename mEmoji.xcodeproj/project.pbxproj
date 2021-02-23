@@ -16,6 +16,7 @@
 		7F7C396F25B6C413009E3D60 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C396E25B6C413009E3D60 /* Background.swift */; };
 		7F7C397225B6C492009E3D60 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C397125B6C492009E3D60 /* Header.swift */; };
 		7F7C397525B6C505009E3D60 /* LevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C397425B6C505009E3D60 /* LevelButton.swift */; };
+		7F7D143925C69E58006A29AC /* mEmojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D143825C69E58006A29AC /* mEmojiTests.swift */; };
 		7F8539A725B9CD660001312E /* CountdownCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539A625B9CD660001312E /* CountdownCircle.swift */; };
 		7F8539AA25BAEC8E0001312E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539A925BAEC8E0001312E /* Extension.swift */; };
 		7F8539AF25BEE8840001312E /* PlayMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8539AE25BEE8830001312E /* PlayMusic.swift */; };
@@ -33,6 +34,16 @@
 		7FF9EF2225AA0A0400A623BE /* TestScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EF2125AA0A0400A623BE /* TestScreenButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7F7D143B25C69E58006A29AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FCD62D825A84873000CA821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FCD62DF25A84873000CA821;
+			remoteInfo = mEmoji;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7F39AB1925B715B400C3EC5F /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
 		7F39AB1D25B716AB00C3EC5F /* CenterPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterPic.swift; sourceTree = "<group>"; };
@@ -43,6 +54,9 @@
 		7F7C396E25B6C413009E3D60 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		7F7C397125B6C492009E3D60 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		7F7C397425B6C505009E3D60 /* LevelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelButton.swift; sourceTree = "<group>"; };
+		7F7D143625C69E58006A29AC /* mEmojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mEmojiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7D143825C69E58006A29AC /* mEmojiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mEmojiTests.swift; sourceTree = "<group>"; };
+		7F7D143A25C69E58006A29AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F8539A625B9CD660001312E /* CountdownCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownCircle.swift; sourceTree = "<group>"; };
 		7F8539A925BAEC8E0001312E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		7F8539AE25BEE8830001312E /* PlayMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusic.swift; sourceTree = "<group>"; };
@@ -63,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7F7D143325C69E58006A29AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FCD62DD25A84873000CA821 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +116,15 @@
 			path = Timers;
 			sourceTree = "<group>";
 		};
+		7F7D143725C69E58006A29AC /* mEmojiTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F7D143825C69E58006A29AC /* mEmojiTests.swift */,
+				7F7D143A25C69E58006A29AC /* Info.plist */,
+			);
+			path = mEmojiTests;
+			sourceTree = "<group>";
+		};
 		7F8539B125BEE8B30001312E /* Music */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				7FCD62E225A84873000CA821 /* mEmoji */,
+				7F7D143725C69E58006A29AC /* mEmojiTests */,
 				7FCD62E125A84873000CA821 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				7FCD62E025A84873000CA821 /* mEmoji.app */,
+				7F7D143625C69E58006A29AC /* mEmojiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +188,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7F7D143525C69E58006A29AC /* mEmojiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F7D143F25C69E58006A29AC /* Build configuration list for PBXNativeTarget "mEmojiTests" */;
+			buildPhases = (
+				7F7D143225C69E58006A29AC /* Sources */,
+				7F7D143325C69E58006A29AC /* Frameworks */,
+				7F7D143425C69E58006A29AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F7D143C25C69E58006A29AC /* PBXTargetDependency */,
+			);
+			name = mEmojiTests;
+			productName = mEmojiTests;
+			productReference = 7F7D143625C69E58006A29AC /* mEmojiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7FCD62DF25A84873000CA821 /* mEmoji */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FCD62EF25A84878000CA821 /* Build configuration list for PBXNativeTarget "mEmoji" */;
@@ -179,9 +229,13 @@
 		7FCD62D825A84873000CA821 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					7F7D143525C69E58006A29AC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7FCD62DF25A84873000CA821;
+					};
 					7FCD62DF25A84873000CA821 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -201,11 +255,19 @@
 			projectRoot = "";
 			targets = (
 				7FCD62DF25A84873000CA821 /* mEmoji */,
+				7F7D143525C69E58006A29AC /* mEmojiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7F7D143425C69E58006A29AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FCD62DE25A84873000CA821 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +283,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7F7D143225C69E58006A29AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7D143925C69E58006A29AC /* mEmojiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FCD62DC25A84873000CA821 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,7 +319,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7F7D143C25C69E58006A29AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FCD62DF25A84873000CA821 /* mEmoji */;
+			targetProxy = 7F7D143B25C69E58006A29AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7F7D143D25C69E58006A29AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WM9XM3NC73;
+				INFOPLIST_FILE = mEmojiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.mEmojiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mEmoji.app/mEmoji";
+			};
+			name = Debug;
+		};
+		7F7D143E25C69E58006A29AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WM9XM3NC73;
+				INFOPLIST_FILE = mEmojiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.mEmojiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mEmoji.app/mEmoji";
+			};
+			name = Release;
+		};
 		7FCD62ED25A84878000CA821 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +531,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7F7D143F25C69E58006A29AC /* Build configuration list for PBXNativeTarget "mEmojiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7D143D25C69E58006A29AC /* Debug */,
+				7F7D143E25C69E58006A29AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7FCD62DB25A84873000CA821 /* Build configuration list for PBXProject "mEmoji" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
