@@ -29,3 +29,4 @@ struct TimeLineProgressViewStyle: ProgressViewStyle {
             .animation(.easeIn)
     }
 }
+
